@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('../img/fondo.png') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    margin: 50px auto;
+    gap: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Transparencia */
+    border-radius: 10px;
+}
+
+.productos-lista {
+    width: 30%;
+    position: relative; 
+    background: url('../img/videojuegos.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+.productos-lista::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    z-index: 0;
+}
+
+.productos-lista * {
+    position: relative;
+    z-index: 1; /* Asegura que los elementos estén por encima de la capa de fondo */
+}
+
+.imagen-producto {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.detalles-producto {
+    width: 70%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #28A745;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#borrar {
+    background-color: #FFC107;
+}
+
+#borrar:hover {
+    background-color: #e53935;
+}

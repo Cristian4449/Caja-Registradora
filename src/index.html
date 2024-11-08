@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Caja registradora</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="productos-lista">
+            <h3>Lista de Productos</h3>
+            <select id="productos">
+                <option value="0">Seleccione un producto</option>
+                <option value="70">The Legend of Zelda: Breath of the Wild - $70</option>
+                <option value="60">Red Dead Redemption 2 - $60</option>
+                <option value="50">Minecraft - $50</option>
+                <option value="70">God of War: Ragnarok - $70</option>
+                <option value="60">The Witcher 3: Wild Hunt - $60</option>
+                <option value="40">Among Us - $40</option>
+                <option value="60">Hollow Knight - $60</option>
+                <option value="70">Elden Ring - $70</option>
+                <option value="50">Persona 5 Royal - $50</option>
+                <option value="60">Grand Theft Auto V - $60</option>
+                <option value="30">Stardew Valley - $30</option>
+                <option value="70">Cyberpunk 2077 - $70</option>
+                <option value="60">Resident Evil Village - $60</option>
+                <option value="50">Animal Crossing: New Horizons - $50</option>
+                <option value="60">Call of Duty: Modern Warfare II - $60</option>
+                <option value="70">Final Fantasy VII Remake - $70</option>
+                <option value="50">Super Smash Bros. Ultimate - $50</option>
+                <option value="60">Fortnite - $60</option>
+                <option value="40">Fall Guys - $40</option>
+            </select>
+        </div>
+        <div class="detalles-producto">
+            <h2>Tienda El Zelda 🕹️🎮</h2>
+            <h2>Caja Registradora</h2>
+            <label for="nombre-producto">Producto seleccionado:</label>
+            <input type="text" id="nombre-producto" readonly>
+
+            <div id="compra">
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" id="cantidad" min="1" value="1">
+                <p id="total-producto">Total del producto: $0</p>
+                <button id="agregar">Agregar a la compra</button>
+            </div>
+
+            <h3>Productos en la compra:</h3>
+            <p id="resumen-compra"></p>
+
+            <h3>Total de la compra:</h3>
+            <p id="total-compra">$0</p>
+
+            <button id="borrar">Borrar Todo</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
